@@ -1,6 +1,5 @@
 import java.awt.*;
 import java.util.*;
-import javax.swing.*;
 
 public class MazeSolver {
     private static final int[] dr = {-1, 1, 0, 0};
