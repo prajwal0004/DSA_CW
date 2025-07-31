@@ -19,7 +19,7 @@ public class MazePanel extends JPanel {
         JButton bfsBtn = new JButton("Solve with BFS");
         JButton genBtn = new JButton("Generate New Maze");
 
-        dfsBtn.addActionListener(e -> {
+        dfsBtn.addActionListener(_ -> {
             if (!solving) {
                 solving = true;
                 new Thread(() -> {
@@ -29,7 +29,7 @@ public class MazePanel extends JPanel {
             }
         });
 
-        bfsBtn.addActionListener(e -> {
+        bfsBtn.addActionListener(_ -> {
             if (!solving) {
                 solving = true;
                 new Thread(() -> {
@@ -39,7 +39,7 @@ public class MazePanel extends JPanel {
             }
         });
 
-        genBtn.addActionListener(e -> generateMaze());
+        genBtn.addActionListener(_ -> generateMaze());
 
         add(dfsBtn);
         add(bfsBtn);
