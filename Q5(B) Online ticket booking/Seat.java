@@ -9,7 +9,7 @@ public class Seat {
         return false;
     }
 
-    public boolean isBooked() {
+    public synchronized boolean isBooked() {
         return booked;
     }
 
